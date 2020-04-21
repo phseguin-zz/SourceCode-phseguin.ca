@@ -1,7 +1,7 @@
 <?php 
 function printMenu() {
     ?>
-    <h3>Copyright © 2020 Pascal Hamish Seguin</h3>
+    <h3>Pascal Hamish Seguin</h3>
     <div id="menuNav" class="Nav">
         <label class="footerlinks">Home</label>
         <label class="footerlinks">Education</label>
