@@ -45,15 +45,11 @@ document.addEventListener("DOMContentLoaded", function(){
         temp.setAttribute("type",`${ty}`)
         temp.textContent = content;
         return temp;
-    }function makeMovieImg(sr,sz,al){
-        let temp = document.createElement("img");
-        temp.setAttribute("src", `${imgUrl}${sz}${sr}`);
-        temp.setAttribute("alt",al);
-        return temp;
-    }function makeImg(sr,al){
+    }function makeImg(sr,al,id){
         let temp = document.createElement("img");
         temp.setAttribute("src", `${sr}`);
         temp.setAttribute("alt",al);
+        temp.setAttribute("id",`${id}`);
         return temp;}
     function makeList(id,cl){
         let temp = document.createElement("ul")
@@ -76,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){
     navigate.addEventListener("click", (e) => {
         if (e.toElement.innerText === "Home"){
             let imDiv = makeDiv("imageDiv","gridDiv");
-            let im = makeImg('images/pseguin.jpeg','Pascal Hamish Seguin');
+            let im = makeImg('images/pseguin.jpeg','Pascal Hamish Seguin','profilePic');
             let imLab = makeLabel("imgCaption","text","Pascal Hamish Seguin Circa 2016","");
             let abDiv = makeDiv("aboutDiv","gridDiv");
             let abHd = makeH2("aboutHeader","text","Hello World!");
