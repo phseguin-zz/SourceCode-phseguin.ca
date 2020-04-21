@@ -12,14 +12,16 @@ include 'includes/footer.php';
    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body id="body">
-   <div id="menu"><?=printMenu();?></div>
-   <div id="homepage" class="content"> </div>
-   <div id="education" class="content"></div>
-   <div id="volunteer_experince" class="content"></div>
-   <div id="work_experince" class="content"></div>
-   <div id="projects" class="content"></div>
-   <div id="footer"><?=printFooter()?></div>
-<!---<script src="js/assign1Script.js" ></script>-->
+<div id="gridcontainer" class="gridDiv">
+   <div id="menu" class="gridDiv"><?=printMenu();?></div>
+   <div id="homepage" class="gridDiv"> </div>
+   <div id="education" class="gridDiv"></div>
+   <div id="volunteer_experince" class="gridDiv"></div>
+   <div id="work_experince" class="gridDiv"></div>
+   <div id="projects"class="gridDiv"></div>
+   <div id="footer" class="gridDiv"><?=printFooter()?></div>
+</div>
+<script src="js/index.js" ></script>
 
 </body>
 </html>
